@@ -7,7 +7,24 @@ public class HomeWorks {
 WebDriver wd;
 
 @BeforeClass
-    public void setup(){
+    public void setUp(){
+    wd = new ChromeDriver();
+    wd.get("https://telranedu.web.app/login");
+
+}
+
+@Test
+    public void cssLocators(){
+    //by tag name
+
+    //by class
+
+
+    // by id
+
+    //by attribute
+
+
 
 }
 
