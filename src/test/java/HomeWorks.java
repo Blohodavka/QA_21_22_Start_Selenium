@@ -20,18 +20,23 @@ public class HomeWorks {
         //by tag name
         WebElement tag1 = wd.findElement(By.tagName("div"));
         WebElement tag11 = wd.findElement(By.cssSelector("div"));
+        WebElement tag12 = wd.findElement(By.xpath("//div"));
 
         WebElement tag2 = wd.findElement(By.tagName("h1"));
         WebElement tag21 = wd.findElement(By.cssSelector("h1"));
+        WebElement tag22 = wd.findElement(By.xpath("//h1"));
 
         WebElement tag3 = wd.findElement(By.tagName("a"));
         WebElement tag31 = wd.findElement(By.cssSelector("a"));
+        WebElement tag32 = wd.findElement(By.xpath("//a"));
 
         WebElement tag4 = wd.findElement(By.tagName("input"));
         WebElement tag41 = wd.findElement(By.cssSelector("input"));
+        WebElement tag42 = wd.findElement(By.xpath("//input"));
 
         WebElement tag5 = wd.findElement(By.tagName("form"));
         WebElement tag51 = wd.findElement(By.cssSelector("form"));
+        WebElement tag52 = wd.findElement(By.xpath("//form"));
 
         WebElement tag6 = wd.findElement(By.tagName("button"));
         WebElement tag61 = wd.findElement(By.cssSelector("button"));
@@ -40,22 +45,27 @@ public class HomeWorks {
 
         WebElement tag7 = wd.findElement(By.tagName("body"));
         WebElement tag71 = wd.findElement(By.cssSelector("body"));
+        WebElement tag72 = wd.findElement(By.xpath("//body"));
 
         //by class
 
         WebElement class1 = wd.findElement(By.className("container"));
         WebElement class11 = wd.findElement(By.cssSelector(".container"));
-        WebElement wel7 = wd.findElement(By.xpath("//*[@class='container']"));
+        WebElement class12 = wd.findElement(By.xpath("//*[@class='container']"));
 
 
         WebElement class2 = wd.findElement(By.className("navbar-component_nav__1X_4m"));
         WebElement class21 = wd.findElement(By.cssSelector(".navbar-component_nav__1X_4m"));
+        WebElement class22 = wd.findElement(By.xpath("//*[@class='navbar-component_nav__1X_4m']"));
 
         WebElement class3 = wd.findElement(By.className("active"));
         WebElement class31 = wd.findElement(By.cssSelector(".active"));
+        WebElement class32 = wd.findElement(By.xpath("//*[@class='active']"));
+
 
         WebElement class4 = wd.findElement(By.className("login_login__3EHKB"));
         WebElement class41 = wd.findElement(By.cssSelector(".login_login__3EHKB"));
+        WebElement class42 = wd.findElement(By.xpath("//*[@class='login_login__3EHKB']"));
 
         // by id
 
@@ -66,11 +76,17 @@ public class HomeWorks {
         //by attribute
 
         WebElement atr1 = wd.findElement(By.cssSelector("[href = '/home']"));
+        WebElement atr1x = wd.findElement(By.xpath("//*[@href='/home']"));
         WebElement atr2 = wd.findElement(By.cssSelector("[href = '/about']"));
+        WebElement atr2x = wd.findElement(By.xpath("//*[@href='/about']"));
         WebElement atr3 = wd.findElement(By.cssSelector("[href = '/login']"));
+        WebElement atr3x = wd.findElement(By.xpath("//*[@href='/login']"));
         WebElement atr4 = wd.findElement(By.cssSelector("[style = 'border: 1px solid black; background-color: black; color: white;']"));
+        WebElement atr4x = wd.findElement(By.xpath("//*[@style = 'border: 1px solid black; background-color: black; color: white;']"));
         WebElement atr5 = wd.findElement(By.cssSelector("[aria-current = 'page']"));
+        WebElement atr5x = wd.findElement(By.xpath("//*[@aria-current = 'page']"));
         WebElement atr6 = wd.findElement(By.cssSelector("[name = 'email']"));
+        WebElement atr6x = wd.findElement(By.xpath("//*[@name = 'email']"));
         WebElement atr61 = wd.findElement(By.name("email"));
         WebElement atr7 = wd.findElement(By.cssSelector("[placeholder = 'Email']"));
         WebElement atr8 = wd.findElement(By.cssSelector("[name = 'password']"));
