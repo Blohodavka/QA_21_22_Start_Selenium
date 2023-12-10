@@ -5,6 +5,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class HomeWorks {
     WebDriver wd;
 
@@ -106,11 +108,47 @@ public class HomeWorks {
         WebElement el19 = wd.findElement(By.cssSelector("[placeholder ^= 'Em']"));
         WebElement xEl19 = wd.findElement(By.xpath("//input [starts-with(@placeholder, 'Em')]"));
 
+        //contains
+
         WebElement el20 = wd.findElement(By.cssSelector("[placeholder $= 'il']"));
         WebElement xEl20 = wd.findElement(By.xpath("//input [contains(@placeholder, 'il')]"));
+
         WebElement el21 = wd.findElement(By.cssSelector("[placeholder *= 'ma']"));
         WebElement xEl21 = wd.findElement(By.xpath("//input [contains(@placeholder, 'ma')]"));
 
+        WebElement xE22 = wd.findElement(By.xpath("//a[3]"));
+
+    }
+
+    @Test
+    public void classWork(){
+
+        //parent
+
+        WebElement el = wd.findElement(By.xpath("//h1/parent::*"));
+        //WebElement el2 = wd.findElement(By.xpath("//div/div//input/.."));
+        WebElement el1 = wd.findElement(By.xpath("//h1/parent::div"));
+        WebElement el3 = wd.findElement(By.xpath("//h1/.."));
+
+        //ancestor
+
+        WebElement el4 = wd.findElement(By.xpath("//h1/ancestor::*")); //all ancestor
+        WebElement el5 = wd.findElement(By.xpath("//h1/ancestor::div")); // two options
+        WebElement el6 = wd.findElement(By.xpath("//h1/ancestor::div[2]")); //one options
+
+        // ancestor-or-self
+
+        WebElement el7 = wd.findElement(By.xpath("//h1/ancestor-or-self::*"));
+        List<WebElement> list = wd.findElements(By.xpath("//h1/ancestor-or-self::*"));
+
+        //following-sibling
+
+        List<WebElement> list1 = wd.findElements(By.xpath("//h1/following-sibling::a"));
+
+        //preceding-sibling
+
+        WebElement el8 = wd.findElement(By.xpath("//a[@href='/login']/preceding-sibling::h1"));
+        List<WebElement> list2 = wd.findElements(By.xpath("//a[@href='/login']/preceding-sibling::a"));
 
 
 
